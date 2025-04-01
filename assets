@@ -1,4 +1,4 @@
-/* Estilo geral da página*/
+
 body {
     background: #f4f4f4; /* Cor de fundo da página */
     display: flex;
