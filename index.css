@@ -1,9 +1,9 @@
 body {
-    color: #333;
+    color: black;
     background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
   }
@@ -16,27 +16,34 @@ body {
   
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     list-style-type: none;
     align-items: center;
     padding: 16px;
-    background-color: #f0f0f0;
     margin: 0;
   }
   
-  a {
-    color: yellowgreen;
-    text-decoration: none;
+  nav a {
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
     font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
   }
   
   nav a:hover {
-    color: darkgreen;
+    background-color: yellowgreen;
+    transform: scale(1.05);
   }
   
   header {
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0 60px;
+    background-color: white;
+    color: black;
   }
   
   header img {
@@ -62,12 +69,16 @@ body {
     margin-bottom: 30px;
   }
   
+  main section {
+    margin-bottom: 100px;
+  }
+  
   main h3 {
     font-size: 24px;
     color: yellowgreen;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
-    margin-top: 40px;
+    margin-top: 80px;
   }
   
   main p {
@@ -75,26 +86,52 @@ body {
     margin-bottom: 30px;
   }
   
-  footer {
-    display: flex;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding: 20px 0;
-    margin-top: 40px;
+  #sobre-mim {
+    margin-top: 140px;
   }
   
-  footer img {
+  footer {
+    margin-top: 40px;
+    background-color: white;
+  }
+  
+  footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 0;
+    background-color: white;
+  }
+  
+  footer .social img {
     width: 50px;
     height: 50px;
   }
   
-  footer a {
-    margin: 0 60px;
+  footer .social a {
     text-align: center;
     color: yellowgreen;
   }
   
   footer p {
     margin-top: 2px;
+  }
+  
+  .email-contato {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  
+  .email-contato a {
+    color: yellowgreen;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .email-contato a:hover {
+    text-decoration: underline;
   }
   
